@@ -1,0 +1,47 @@
+#number {
+    padding: 10px;
+    margin-top: 25px;
+    width: 500px;
+    height: 30px;
+    background-color: whitesmoke;
+    margin-left: 450px;
+}
+
+.container {
+    background-color: red;
+}
+
+.btn {
+    margin-left: 650px;
+}
+
+#box {
+    width: 300px;
+    border: 25px solid red;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    /* margin-left: 140px; */
+    float: left;
+    background-color: whitesmoke;
+
+  }
+
+  .wrapper {
+      margin-left: 340px;
+  }
+
+  .scoreBox {
+  width: 300px;
+  border: 25px solid red;
+  padding: 25px;
+  margin: 25px;
+  text-align: center;
+  /* margin-left: 140px; */
+  float: left;
+  background-color: whitesmoke;
+  position: relative;
+
+}
+
+
