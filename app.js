@@ -3,13 +3,13 @@ let numberInput;
 
 document.getElementById('number').addEventListener('change', function(event) {
     numberInput = event.target.value;
-    console.log(numberInput);
+    // console.log(numberInput);
 });
 
 
 const getRndInteger = (min, max) => {
     const randomNumber = Math.floor(Math.random() * (max - min)) + min;
-    console.log(randomNumber)
+    // console.log(randomNumber)
     const elem = document.getElementById('box');
     if (numberInput == randomNumber) {
         elem.parentNode.removeChild(elem);
@@ -18,6 +18,13 @@ const getRndInteger = (min, max) => {
     }
     
     return randomNumber;
+  }
+
+  let counter = 1;
+  const score = () => {
+    //   console.log(counter);
+      document.getElementById('scoreBox').innerHTML = counter;
+      return ++counter 
   }
 
   
