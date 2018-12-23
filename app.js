@@ -1,8 +1,13 @@
 
 let numberInput;
 
-document.getElementById('number').addEventListener('change', function(event) {
+document.getElementById('number').addEventListener('change', function (event) {
     numberInput = event.target.value;
+    if (isNaN(numberInput) || numberInput < 1 || numberInput > 10) {
+        console.log("Input not valid");
+      } else {
+        console.log("Input OK");
+      }
     // console.log(numberInput);
 });
 
@@ -16,16 +21,16 @@ const getRndInteger = (min, max) => {
     } else {
         alert('guess again')
     }
-    
+
     return randomNumber;
-  }
+}
 
-  let counter = 1;
-  const score = () => {
+let counter = 1;
+const score = () => {
     //   console.log(counter);
-      document.getElementById('scoreBox').innerHTML = counter;
-      return ++counter 
-  }
+    document.getElementById('scoreBox').innerHTML = counter;
+    return ++counter
+}
 
-  
+
 //read up on addEventListener
