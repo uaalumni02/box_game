@@ -15,6 +15,10 @@
     margin-left: 650px;
 }
 
+.resetBtn {
+    margin-left: 663px;
+}
+
 #box {
     width: 300px;
     border: 25px solid red;

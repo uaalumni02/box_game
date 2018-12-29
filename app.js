@@ -6,7 +6,7 @@ const inputNumber = () => {
     if (isNaN(numberInput) || numberInput < 1 || numberInput > 3) {
             document.getElementById("validationResponse").innerHTML = 'Invalid Input';
         } else {
-          score()
+          score();
         }
   }
 
@@ -17,7 +17,7 @@ const getRndInteger = (min, max) => {
     if (numberInput == randomNumber) {
         elem.parentNode.removeChild(elem);
     } else {
-        console.log('guess again')
+        document.getElementById("answerResponse").innerHTML = 'Incorrect Guess';
     }
 
     return randomNumber;
@@ -28,6 +28,8 @@ const score = () => {
     document.getElementById('scoreBox').innerHTML = counter;
         return ++counter
     }
+
+   
 
 
 
