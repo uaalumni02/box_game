@@ -1,15 +1,14 @@
 
 let numberInput;
 
-document.getElementById('number').addEventListener('change', function (event) {
-    numberInput = event.target.value;
+const inputNumber = () => {
+    numberInput = document.getElementById('number').value
     if (isNaN(numberInput) || numberInput < 1 || numberInput > 3) {
-        alert("Input not valid");
-      } else {
-        console.log("Input OK");
-      }
-    // console.log(numberInput);
-});
+          alert("Input not valid");
+        } else {
+          console.log("Input OK");
+        }
+  }
 
 let randomNumber;
 const getRndInteger = (min, max) => {
