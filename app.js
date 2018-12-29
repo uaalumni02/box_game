@@ -1,10 +1,10 @@
 
-let numberInput;
+let numberInput
 
 const inputNumber = () => {
     numberInput = document.getElementById('number').value
     if (isNaN(numberInput) || numberInput < 1 || numberInput > 3) {
-          alert("Input not valid");
+          alert("Input Not Valid");
         } else {
           score()
         }
@@ -33,4 +33,3 @@ const score = () => {
 
 
 
-//read up on addEventListener
