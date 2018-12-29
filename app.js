@@ -6,7 +6,7 @@ const inputNumber = () => {
     if (isNaN(numberInput) || numberInput < 1 || numberInput > 3) {
           alert("Input not valid");
         } else {
-          console.log("Input OK");
+          score()
         }
   }
 
@@ -18,8 +18,7 @@ const getRndInteger = (min, max) => {
     if (numberInput == randomNumber) {
         elem.parentNode.removeChild(elem);
     } else {
-        // alert('guess again')
-        score()
+        console.log('guess again')
     }
 
     return randomNumber;
