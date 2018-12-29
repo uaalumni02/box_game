@@ -3,7 +3,7 @@ let numberInput;
 
 document.getElementById('number').addEventListener('change', function (event) {
     numberInput = event.target.value;
-    if (isNaN(numberInput) || numberInput < 1 || numberInput > 10 || numberInput != numberInput) {
+    if (isNaN(numberInput) || numberInput < 1 || numberInput > 3) {
         alert("Input not valid");
       } else {
         console.log("Input OK");
@@ -11,26 +11,28 @@ document.getElementById('number').addEventListener('change', function (event) {
     // console.log(numberInput);
 });
 
-
+let randomNumber;
 const getRndInteger = (min, max) => {
-    const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+    randomNumber = Math.floor(Math.random() * (max - min)) + min;
     // console.log(randomNumber)
     const elem = document.getElementById('box');
     if (numberInput == randomNumber) {
         elem.parentNode.removeChild(elem);
     } else {
-        alert('guess again')
-    } 
-        
+        // alert('guess again')
+        score()
+    }
+
     return randomNumber;
 }
 
 let counter = 1;
 const score = () => {
-    //   console.log(counter);
+    //   console.log(counter);   
     document.getElementById('scoreBox').innerHTML = counter;
-    return ++counter
-}
+        return ++counter
+    }
+
 
 
 //read up on addEventListener
