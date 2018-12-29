@@ -3,8 +3,8 @@ let numberInput;
 
 document.getElementById('number').addEventListener('change', function (event) {
     numberInput = event.target.value;
-    if (isNaN(numberInput) || numberInput < 1 || numberInput > 10) {
-        console.log("Input not valid");
+    if (isNaN(numberInput) || numberInput < 1 || numberInput > 10 || numberInput != numberInput) {
+        alert("Input not valid");
       } else {
         console.log("Input OK");
       }
@@ -20,8 +20,8 @@ const getRndInteger = (min, max) => {
         elem.parentNode.removeChild(elem);
     } else {
         alert('guess again')
-    }
-
+    } 
+        
     return randomNumber;
 }
 
